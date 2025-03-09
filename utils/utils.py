@@ -29,7 +29,6 @@ def write_file(loc, file):
         buffer.write(file.file.read())
 
 def save_file(email, pname, file):
-    base_dir = os.path.join(STORAGE_LOC, email, pname, 'datasets')
 
     dataset_loc = os.path.join(email, pname, 'datasets', f"{file.filename}")
 
