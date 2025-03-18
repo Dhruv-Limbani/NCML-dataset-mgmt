@@ -18,5 +18,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+async def root():
+    return {"message": "Hello from the Dataset Management Microservice!"}
+
 if __name__ == "__main__":
     uvicorn.run(app, host="localhost", port=8002)

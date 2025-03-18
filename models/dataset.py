@@ -4,4 +4,3 @@ class Dataset(BaseModel):
     email: str
     pname: str
     name: str
-    content: str
